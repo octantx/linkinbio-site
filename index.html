@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <title>Jordon - Links Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="index.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
@@ -16,8 +17,15 @@
                 minHeight: 200.00,
                 minWidth: 200.00,
                 scale: 1.00,
-                scaleMobile: 1.00
+                scaleMobile: 1.00,
+                color: 0xdc6499,
+                spacing: 10.00,
+                chaos: 10.00
             })
+
+            const main = document.querySelector('main');
+            main.style.opacity = 1;
+            main.style.filter = 'blur(0px)'
         })
         </script>
     </head>
@@ -31,28 +39,14 @@
         </header>
         <ul>
             <li>
-                <a href="https://www.cheese.com">
-                <img src="images/homepage.svg" alt="Homepage" width="20">
-                    Official Website
+                <a href="https://www.instagram.com/octantx/">
+                <img src="images/instagram.svg" alt="Homepage" width="20">
+                    Instagram
                 </a>
             </li>
 
             <li>
-                <a href="https://youtube.com">
-                    <img src="images/youtube.svg" alt="Youtube" width="20">
-                    Youtube
-                </a>
-            </li>
-
-            <li>
-                <a href="https://twitter.com">
-                    <img src="images/twitter.svg" alt="Twitter" width="20">
-                    Twitter
-                </a>
-            </li>
-
-            <li>
-                <a href="https://github.com">
+                <a href="https://github.com/octantx">
                     <img src="images/github.svg" alt="Github" width="20">
                     Github
                 </a>
